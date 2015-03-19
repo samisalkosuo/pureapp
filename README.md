@@ -1,2 +1,2 @@
 # pureapp
-Script related to IBM PureApplication.
+Some scripts related to IBM PureApplication.

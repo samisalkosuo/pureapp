@@ -1,0 +1,53 @@
+[
+   {
+      "execmode": 0,
+      "type": "APPLICATION",
+      "name": "Aspera Cargo D",
+      "description": "Receives files from Aspera Faspex.",
+      "location": "/download/cargod",
+      "command": "sh setup.sh",
+      "ostype": "linux/unix",
+      "keys": [
+         {
+            "type": "string",
+            "scriptkey": "CARGOD_RPM_URL",
+            "scriptdefaultvalue": "http://download.asperasoft.com/download/sw/cargodownloader/1.3/aspera-cargod-1.3.0.80012-linux-32.rpm",
+            "locked": false,
+            "required": true
+         },
+         {
+            "type": "string",
+            "scriptkey": "FASPEXUSER",
+            "scriptdefaultvalue": "",
+            "description": "Faspex user name.",
+            "locked": false,
+            "required": true
+         },
+         {
+            "type": "password",
+            "scriptkey": "FASPEXPASSWORD",
+            "scriptdefaultvalue": "",
+            "description": "Faspex password. Note: if using special characters, you must use XML-appropriate symbols when editing the configuration file. For example, &amp; instead of &.",
+            "locked": false,
+            "required": true
+         },
+         {
+            "type": "string",
+            "scriptkey": "FASPEXURL",
+            "scriptdefaultvalue": "",
+            "locked": false,
+            "required": true,
+            "description": "Faspex url."
+         },
+         {
+            "type": "string",
+            "scriptkey": "DOWNLOADDIR",
+            "scriptdefaultvalue": "/download",
+            "description": "Download directory.",
+            "locked": false,
+            "required": true
+         }
+      ],
+      "version": "1.0.0"
+   }
+]

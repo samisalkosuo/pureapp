@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<conf version="1">
+
+<accounts>
+    
+    <!-- add one or more accounts here -->
+    <account>
+
+	    <!-- Required. -->	    
+	    <user>%USER%</user>
+
+	    <!-- Required. -->
+	    <password>%PASSWORD%</password>
+
+	    <!-- Required. eg. https://example.com/aspera/faspex -->	    
+	    <host>%FASPEXURL%</host>
+
+	    <!-- Required. This is where all the account packages will be downloaded -->
+	    <download_folder>%DOWNLOADDIR%</download_folder>
+
+	    <!-- Optional. If specified, Cargo will attempt to decrypt during download -->
+	    <passphrase></passphrase>
+
+    </account>
+
+</accounts>
+
+<general>
+
+    <!-- Optional. time to check for new packages in minutes (default 15) Valid values are 1,5,15,30,60 -->
+    <check_interval>5</check_interval>
+
+    <!-- Optional. This is the max number of active or failed transfers in the queue.
+    If the max is reached, failed transfers will be removed.
+    If there are no failed transfers, no new transfers will be added. (default 100) -->
+    <max_transfers>50</max_transfers>
+
+    <!-- Location of the cargo database to write or read
+    (default $INSTALL_DIR/var ) -->
+    <db_dir></db_dir>
+
+</general>
+
+<transfers>
+
+    <!-- Optional. Set true to download packages to unique folders (default true) -->
+    <separate_folders></separate_folders>
+
+    <!-- Optional. Number of retries for failed transfers (default 3)-->
+    <retry_attempts></retry_attempts>
+
+    <!-- Optional. Interval between retries in seconds (default 30)-->
+    <retry_interval></retry_interval>
+
+    <!-- Optional. Specifies verbosity of logging.
+    0 - info, 1 - debug, 2 - trace. (default 0) -->
+    <log_level></log_level>
+
+</transfers>
+
+<network>
+
+    <http_fallback_proxy>
+	    <!-- Optional. set to true to set fallback proxy settings (default false) -->
+	      <enable>false</enable>
+	      <username></username>
+	      <password></password>
+	      <address></address>
+	      <port></port>
+    </http_fallback_proxy>
+
+    <fasp_proxy>
+	    <!-- Optional. set to true to set fasp proxy settings (default false) -->
+	      <enable>false</enable>
+	      <username></username>
+	      <password></password>
+
+	      <!-- dnat:// or dnats:// for secure fasp proxy. -->
+	       <address></address>
+	       <port></port>
+    </fasp_proxy>
+
+</network>
+
+<bandwidth>
+
+    <!-- Optional. Download bandwidth limit in Mbps. Leave empty to let server decide. -->
+    <download_limit></download_limit>
+
+</bandwidth>
+
+</conf>

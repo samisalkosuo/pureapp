@@ -1,3 +1,4 @@
 pureapp_console_*
 err_output.txt
 output.json
+*.zip
