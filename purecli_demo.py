@@ -112,7 +112,7 @@ def scriptsCMD():
 
 def deployCMD():
 	ctime=time.strftime("%Y%m%d%H%M%S")
-	envProfileName="ipas3-CloudGroup1-Profile-SAP"
+	envProfileName="ipas3-CloudGroup1-Profile"
 	#envProfileName="ipas3-CloudGroup3-Profile"
 	patternName="sjs DayTrader NDHADR"
 	#patternName="sjs Linux"
@@ -165,6 +165,17 @@ def deploydeleteCMD():
 	f.close()
 	print "Deleting pattern instance...",virtualInstanceID
 	instance=deployer.virtualsysteminstances.delete(virtualInstanceID) 
+
+
+def acceptlicensesCMD():
+	for script in deployer.scripts:
+		name=script.label
+		licensestatus=script.licensestatus
+		status=""
+		if licensestatus=="unaccepted":
+			script.licensestatus="accepted"
+			status="-> accepted"
+		print "%s: %s %s" % (name,licensestatus,status)
 
 
 if __name__ == "__main__": 
