@@ -1,0 +1,13 @@
+[
+   {
+      "rolling": false,
+      "manual_keys": [
+      ],
+      "consoleLinks": [
+         {
+            "name": "Intelligence Portal",
+            "url": "http://{public-hostname}/apollo"
+         }
+      ]
+   }
+]

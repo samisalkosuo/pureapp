@@ -1,0 +1,38 @@
+[
+   {
+      "execmode": 0,
+      "type": "APPLICATION",
+      "name": "i2 IAP 3.0.11 install",
+      "version": "1.0",
+      "description": "Deploy i2 IAP ",
+      "location": "/iap/scripts/install",
+      "command": "sh setup.sh",
+      "ostype": "linux/unix",
+      "keys": [
+         {
+            "type": "string",
+            "scriptkey": "FILESERVER_IP",
+            "scriptdefaultvalue": "",
+            "description": "File server IP address.",
+            "locked": false,
+            "required": true
+         },
+         {
+            "type": "string",
+            "scriptkey": "DBUSERNAME",
+            "scriptdefaultvalue": "",
+            "description": "Database user name",
+            "locked": false,
+            "required": true
+         },
+         {
+            "type": "password",
+            "scriptkey": "DBUSERPASSWORD",
+            "scriptdefaultvalue": "",
+            "description": "Database user password.",
+            "locked": false,
+            "required": true
+         }
+      ]
+   }
+]
