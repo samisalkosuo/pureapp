@@ -1,0 +1,12 @@
+#Useful commands
+
+#Create new pattern type
+deployer.patterntypes.create('vsys.websphere-1.0.0.0.tgz')
+
+#create IM reposityr
+deployer.imrepositories.createCategory('WebSphere')
+deployer.imrepositories.uploadPackageFromLocal('WebSphere','was80098552PowerIntelDefaultData.tgz')
+
+
+#install script package
+deployer.scripts.create({'archivepath' : 'C:\\myScriptsDirectory\\myArchive.zip'})

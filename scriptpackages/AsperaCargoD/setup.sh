@@ -30,6 +30,8 @@ function changeString {
 	fi
 }
 
+
+
 /sbin/service iptables stop
 
 if [[ "$CARGOD_RPM_URL" == "" ]] ; then
@@ -39,8 +41,8 @@ fi
 wget $CARGOD_RPM_URL
 
 #prereqs:
-#yum install glibc.i686
-#yum install zlib-devel.i686
+yum -y install glibc.i686
+yum -y install zlib-devel.i686
 
 rpm -i aspera-cargod-1.3.0.80012-linux-32.rpm
 
