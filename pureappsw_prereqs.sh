@@ -130,4 +130,4 @@ echo "/pureapp-sw-data/drouter /drouter none bind 0 0" >> /etc/fstab
 #audit-libs-2.3.7-5.el6.i686.rpm  cracklib-2.8.16-4.el6.i686.rpm  db4-4.7.25-19.el6_6.i686.rpm  libselinux-2.0.94-5.8.el6.i686.rpm  pam-1.1.1-20.el6.i686.rpm
 #force install them all:
 #rpm -Uvh --force *.rpm
-echo "You may restart, if you wish..."
+#echo "You may restart, if you wish..."

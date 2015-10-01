@@ -1,0 +1,23 @@
+[
+   {
+      "execmode": 0,
+      "type": "APPLICATION",
+      "name": "Oracle 12c install",
+      "description": "Installs Oracle 12c and configures database.",
+      "location": "/u01/scripts/oracle12c_install",
+      "command": "sh deploy_oracle.sh",
+      "version": "1.0.0",
+      "keys": [
+         {
+            "type": "password",
+            "scriptkey": "DEFAULT_PASSWORD",
+            "scriptdefaultvalue": "passW0RD",
+            "description": "Default password for all.",
+            "locked": false,
+            "required": false
+         }
+      ],
+      "ostype": "linux/unix",
+      "commandargs": "$DEFAULT_PASSWORD"
+   }
+]
