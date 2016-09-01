@@ -55,7 +55,7 @@ wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 rpm -Uvh epel-release-6*.rpm
 
 #update all packages
-yum -y update
+#yum -y update
 
 yum -y install compat-libstdc++-33.i686
 yum -y install compat-libstdc++-33.x86_64
@@ -73,9 +73,10 @@ yum -y install mod_security*
 #yum -y install mod_security_crs-extras.noarch
 yum -y install ntp.x86_64
 yum -y install openssh-clients.x86_64
-yum -y install pam.i686
 yum -y install redhat-lsb-core.x86_64
 yum -y install unzip.x86_64
+yum -y install pam.i686
+yum -y install ksh*
 
 #does not setup encrypted disks
 
