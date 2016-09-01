@@ -1,0 +1,15 @@
+[
+   {
+      "consoleLinks": [
+         {
+            "name": "UCD Admin Console",
+            "url": "https:\/\/{public-ip}:8443"
+         }
+      ],
+      "manual_keys": [
+      ],
+      "readonly": "false",
+      "rolling": false,
+      "savevars": "0"
+   }
+]

@@ -1,0 +1,29 @@
+[
+   {
+      "command": "sh setup.sh",
+      "description": "Custom initialization for RHEL 7 for example, disable fw, centos repos",
+      "execmode": 0,
+      "filename": "CustomInit_RHEL7.zip",
+      "keys": [
+         {
+            "description": "Add EPEL Repository to yum mgr.",
+            "locked": false,
+            "required": true,
+            "scriptdefaultvalue": "false",
+            "scriptkey": "ADD_EPEL_REPO",
+            "scriptvalue": "false",
+            "type": "string",
+            "validvalues": [
+               "true",
+               "false"
+            ]
+         }
+      ],
+      "location": "\/scripts\/custom_init",
+      "name": "CustomInit_RHEL7",
+      "ostype": "linux\/unix",
+      "timeout": 60000000,
+      "type": "APPLICATION",
+      "version": "1.0.0.0"
+   }
+]

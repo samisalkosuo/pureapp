@@ -1,0 +1,66 @@
+[
+   {
+      "command": "sh setup.sh",
+      "description": "Install UDC client to \/scipts\/udclient",
+      "execmode": 0,
+      "filename": "UCD_Client_install.zip",
+      "keys": [
+         {
+            "description": "UCD server IP address.",
+            "locked": false,
+            "required": true,
+            "scriptkey": "UCD_SERVER_IP",
+            "type": "string"
+         },
+         {
+            "description": "UCD server admin username.",
+            "locked": false,
+            "required": true,
+            "scriptdefaultvalue": "admin",
+            "scriptkey": "UCD_ADMIN_USER",
+            "scriptvalue": "admin",
+            "type": "string"
+         },
+         {
+            "description": "UCD server admin user password.",
+            "locked": false,
+            "required": true,
+            "scriptkey": "UCD_ADMIN_PASSWORD",
+            "type": "string"
+         },
+         {
+            "description": "UrbanCode client directory",
+            "locked": false,
+            "required": true,
+            "scriptdefaultvalue": "\/udclient",
+            "scriptkey": "UDCLIENT_DIR",
+            "scriptvalue": "\/udclient",
+            "type": "string"
+         },
+         {
+            "description": "Execute default UCD config like add default agent.",
+            "locked": false,
+            "required": true,
+            "scriptdefaultvalue": "true",
+            "scriptkey": "EXECUTE_DEFAULT_UCD_CONFIG",
+            "scriptvalue": "true",
+            "type": "boolean"
+         },
+         {
+            "description": "Agent name to be used to import versions.",
+            "locked": false,
+            "required": true,
+            "scriptdefaultvalue": "change_me",
+            "scriptkey": "UCD_DEFAULT_AGENT_NAME",
+            "scriptvalue": "change_me",
+            "type": "string"
+         }
+      ],
+      "location": "\/scripts\/udclient",
+      "name": "UCD_Client_install",
+      "ostype": "linux\/unix",
+      "timeout": 60000000,
+      "type": "APPLICATION",
+      "version": "1.0.0.0"
+   }
+]

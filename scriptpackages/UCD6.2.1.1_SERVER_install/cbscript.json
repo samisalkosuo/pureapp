@@ -1,0 +1,32 @@
+[
+   {
+      "command": "sh setup.sh",
+      "description": "Install and start UCD 6.2.1.1 Server component",
+      "execmode": 0,
+      "filename": "UCD6.2.1.1_SERVER_install.zip",
+      "keys": [
+         {
+            "description": "Password for UCD \"admin\" user",
+            "locked": false,
+            "required": true,
+            "scriptkey": "UCD_SERVER_ADMIN_PASSWORD",
+            "type": "password"
+         },
+         {
+            "description": "URL for UCD server binary file.",
+            "locked": false,
+            "required": true,
+            "scriptdefaultvalue": "http:\/\/10.250.64.26\/UrbanCodeDeploy6.2.1.1_TRIAL\/URBANCODE_DEPLOY_6.2.1.1_EN_EVAL.zip",
+            "scriptkey": "UCDSERVER_BINARY_URL",
+            "scriptvalue": "http:\/\/10.250.64.26\/UrbanCodeDeploy6.2.1.1_TRIAL\/URBANCODE_DEPLOY_6.2.1.1_EN_EVAL.zip",
+            "type": "string"
+         }
+      ],
+      "location": "\/scripts\/ucd_install",
+      "name": "UCD6.2.1.1_SERVER_install",
+      "ostype": "linux\/unix",
+      "timeout": 60000000,
+      "type": "APPLICATION",
+      "version": "1.0.0.0"
+   }
+]
