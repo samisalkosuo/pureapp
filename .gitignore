@@ -3,3 +3,4 @@ err_output.txt
 output.json
 *.zip
 virtualInstanceID
+tmp/
