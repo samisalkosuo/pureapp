@@ -1,0 +1,30 @@
+{
+   "add_ons": [
+   ],
+   "images": [
+   ],
+   "plugins": [
+   ],
+   "script_packages": [
+      {
+         "file": "scripts\/CustomInit_RHEL7.zip",
+         "name": "CustomInit_RHEL7",
+         "version": "1.0.0.0"
+      },
+      {
+         "file": "scripts\/UCD6.2.1.1_SERVER_install.zip",
+         "name": "UCD6.2.1.1_SERVER_install",
+         "version": "1.0.0.0"
+      },
+      {
+         "file": "scripts\/ibm-ucd-agent-script-package-2.zip",
+         "name": "install_ucd_agent",
+         "version": "1.0.0"
+      },
+      {
+         "file": "scripts\/UCD_Client_install.zip",
+         "name": "UCD_Client_install",
+         "version": "1.0.0.0"
+      }
+   ]
+}
